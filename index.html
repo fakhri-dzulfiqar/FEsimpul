@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Sidebar content -->
+        </div>
+        <img src="images/Vector 9 (Stroke).png" class="divider">
+        <div class="main-content">
+            <div class="header">
+                <div class="search-container">
+                    <input type="text" class="search-input-header">
+                    <img src="images/icon/action/search_24px.png" class="search-icon">
+                </div>
+            </div>
+            <div class="content">
+                <!-- Main content -->
+            </div>
+        </div>
+    </div>
+    <div class="floating-icons">
+        <div class="icon-group" id="icon-group">
+            <div class="icon-item">
+                <img src="images/icon/action/Group 1900.png" alt="Task">
+                <!-- <p>Task</p> -->
+            </div>
+            <div class="icon-item">
+                <img src="images/icon/action/Group 1899.png" alt="Inbox" id="action-icon">
+                <!-- <p>Inbox</p> -->
+            </div>
+        </div>
+        <button class="action-button" onclick="toggleIcons()">
+            <img src="images/icon/action/Group 1658.png" class="action-icon" id="action-icon">
+        </button>
+    </div>    
+    <div id="inbox-popup" class="modal">
+        <div class="modal-content">
+            <div class="search-container-popup">
+                <input type="text" class="search-input-popup" placeholder="Search">
+                <img src="images/icon/action/search_24pxblack.png" class="search-icon-popup">
+            </div>
+            <img src="images/Group 1977.png" class="additional-image">    
+        </div>
+    </div>    
+    
+    <script src="script.js"></script>
+</body>
+</html>
